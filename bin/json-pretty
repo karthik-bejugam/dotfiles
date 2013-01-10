@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'rubygems'
+
 ['yajl/json_gem', 'json', 'json/pure'].each do |gem_name|
   begin
     require gem_name
@@ -8,4 +9,7 @@ require 'rubygems'
   break
 end
 
-puts JSON.pretty_generate(JSON.load($stdin))
+$stdin.each do |line|
+  puts JSON.pretty_generate(JSON.load('['+line+']').first)
+end
+

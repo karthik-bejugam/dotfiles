@@ -26,15 +26,15 @@ Pry.config.history.file = CONSOLE_HIST_FILE
 # Pry extensions
 #
 
-Pry.class_eval do
-  def self.add_hook(hook_name, &blk)
-    old_hook = Pry.hooks[hook_name]
-    self.hooks[hook_name] = Proc.new do |out, obj|
-      old_hook.call(out, obj) if old_hook
-      blk.call(out, obj)
-    end
-  end
-end
+#Pry.class_eval do
+#  def self.add_hook(hook_name, &blk)
+#    old_hook = Pry.hooks[hook_name]
+#    self.hooks[hook_name] = Proc.new do |out, obj|
+#      old_hook.call(out, obj) if old_hook
+#      blk.call(out, obj)
+#    end
+#  end
+#end
 
 
 #
@@ -45,8 +45,8 @@ end
 # safely_require('hirb') do
 #   Pry.config.print = lambda{|out,val| Hirb::View.view_or_page_output(val) || Pry::DEFAULT_PRINT.call(out, val) }
 # end
-safely_require(File.join(CONSOLE_HELPERS_DIR, 'toy'))
-safely_require(File.join(CONSOLE_HELPERS_DIR, 'history_deduper'))
+# safely_require(File.join(CONSOLE_HELPERS_DIR, 'toy'))
+# safely_require(File.join(CONSOLE_HELPERS_DIR, 'history_deduper'))
 # safely_require(File.join(CONSOLE_HELPERS_DIR, 'rails_console'))
 
 

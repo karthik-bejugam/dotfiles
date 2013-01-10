@@ -1,1 +1,1 @@
-../../ics/core/wukong/bin/hdp-parts_to_keys.rb
+../../code/wukong/bin/hdp-parts_to_keys.rb

@@ -10,6 +10,5 @@ require 'rubygems'
 end
 
 $stdin.each do |line|
-  puts JSON.pretty_generate(JSON.load('['+line+']').first)
+  puts JSON.pretty_generate(JSON.load(line))
 end
-

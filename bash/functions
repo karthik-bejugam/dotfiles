@@ -136,6 +136,6 @@ function sshkp() {
 }
 
 function forget_host() {
-  sed -i "s/.*${1}.*//" ~/.ssh/known_hosts
+  sed -i .bak "s/.*${1}.*//" ~/.ssh/known_hosts
   rm -f ~/.ssh/known_hosts.old
 }

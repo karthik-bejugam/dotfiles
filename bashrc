@@ -12,3 +12,7 @@ if [ "$PS1" ]; then
 fi
 
 set     -o history
+
+function loadssh() {
+  ssh 23.20.150.37
+}

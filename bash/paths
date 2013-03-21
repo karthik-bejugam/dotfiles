@@ -47,7 +47,7 @@ prepend_path PATH    /usr/local/share/python
 prepend_path PATH    $HOME/.rbenv/bin
 prepend_path PATH    $HOME/bin
 prepend_path PATH    $HOME/slice/bin
-prepend_path PATH    /usr/local/bin
+PATH=/usr/local/bin:$PATH
 prepend_path PATH    /usr/local/sbin
 prepend_path MANPATH /usr/local/share/man
 prepend_path MANPATH /usr/local/man

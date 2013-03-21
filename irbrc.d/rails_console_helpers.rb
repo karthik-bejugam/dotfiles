@@ -23,7 +23,7 @@ if railsness
   #   helper :application rescue nil
   # end if ENV['RAILS_ENV']
 
-  def login id='mrflip'
+  def login id='rachel'
     ::UserSession.controller = Authlogic::TestCase::MockController.new
     user = User.find_by_username(id) || User.find_by_id(id)
     us = UserSession.create(user)

@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-bzcat | /bin/egrep "$@"
-
-true

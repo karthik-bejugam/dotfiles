@@ -46,8 +46,6 @@ PATH=${PATH//\/usr\/local\/bin\:/}
 PATH=${PATH//\/usr\/local\/sbin\:/}
 PATH=${PATH//$HOME\/.rbenv\/shims\:/}
 
-# PATH=/Users/flip/slice/bin:/Users/flip/bin:/Users/flip/.rbenv/shims:/usr/local/sbin:/usr/local/bin:/Users/flip/.rbenv/bin:/usr/local/share/python:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home/bin
-
 PATH=/usr/local/bin:/usr/local/sbin:${PATH}
 prepend_path PATH    /usr/local/share/python
 prepend_path PATH    $HOME/.rbenv/bin
@@ -76,9 +74,9 @@ if [ "$MACHINE" == "OSX" ] ; then export HOMEBREW_TEMP=/tmp ; fi
 # Chef setup
 #
 
-export CHEF_USER="mrflip"
+export CHEF_USER="mccuistion"
 export CSTN_ORG="local"
-export CSTN_CLUSTER="fleep"
+export CSTN_CLUSTER="mc"
 export CSTN_FACET="$NODENAME"
 export CSTN_DIR=$HOME/ics/sysadmin/chimpstation-homebase
 

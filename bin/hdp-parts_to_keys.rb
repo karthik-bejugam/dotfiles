@@ -1,1 +1,0 @@
-../../code/wukong/bin/hdp-parts_to_keys.rb

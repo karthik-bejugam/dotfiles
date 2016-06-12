@@ -1,0 +1,30 @@
+alias vi='vim'
+
+eval "$(rbenv init -)"
+
+be() { bundle exec "$@" ;}
+rb() { rbenv "$@" ;}
+
+if [ -f $HOME/.git-completion.bash ]; then
+    source $HOME/.git-completion.bash
+fi
+
+# http://stackoverflow.com/questions/1348842/what-should-i-set-java-home-to-on-osx
+export JAVA_HOME=$(/usr/libexec/java_home)
+export MAVEN_HOME=/usr/local/Cellar/maven30/3.0.5
+
+# Number of lines of history to keep
+export HISTFILESIZE=1000000
+# Set how many commands to keep in the current session history list
+export HISTSIZE=80
+# Ignore commands that start with a space
+export HISTIGNORE="&:[ ]*:exit"
+# avoid duplicates..
+export HISTCONTROL=ignoredups
+# After each command, save and reload history
+export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
+# Display history timestamp
+export HISTTIMEFORMAT='%F %T '
+
+git config --global user.email "mccuistion@me.com"
+git config --global user.name "Rachel McCuistion"

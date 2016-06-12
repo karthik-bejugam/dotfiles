@@ -1,0 +1,29 @@
+root = true
+
+[*]
+end_of_line = LF
+charset = utf-8
+indent_style = space
+insert_final_newline = true
+indent_size = 4
+trim_trailing_whitespace = true
+
+[*.vim]
+indent_size = 4
+max_line_length = 100
+
+[*.rb]
+indent_size = 2
+max_line_length = 100
+
+[*.yml]
+indent_size = 2
+max_line_length = 100
+
+[*.py]
+indent_size = 4
+max_line_length = 100
+
+[*.pp]
+indent_size = 2
+max_line_length = 100

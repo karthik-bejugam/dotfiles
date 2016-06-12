@@ -1,9 +1,0 @@
-#!/bin/bash
-
-cd ~/projects/macvim/src
-make distclean
-./configure --with-features=huge --enable-rubyinterp --enable-pythoninterp \
-				--enable-perlinterp --enable-cscope./configure \
-				--with-features=huge --enable-pythoninterp --enable-rubyinterp
-make
-sudo make install

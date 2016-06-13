@@ -26,5 +26,5 @@ export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; histor
 # Display history timestamp
 export HISTTIMEFORMAT='%F %T '
 
-git config --global user.email "mccuistion@me.com"
+git config --global user.email "mccuistion@icloud.com"
 git config --global user.name "Rachel McCuistion"

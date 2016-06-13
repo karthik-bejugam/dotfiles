@@ -29,6 +29,7 @@ alias gc="git commit -m"
 alias gh="git push"
 alias gl="git pull"
 alias gr="git revert"
+alias gx="git stash"
 
 # Ruby 
 alias x="bundle exec"

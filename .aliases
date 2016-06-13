@@ -11,9 +11,28 @@ alias d="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/projects"
-alias g="git"
+#alias g="git"
 alias h="history"
 alias j="jobs"
+
+alias code="~/code"
+alias dot="~/dotfiles"
+alias wf="~/code/workflows"
+
+# Github
+alias gs="git status"
+alias ga="git add ."
+alias gA="git add -A"
+alias gc="git commit -m"
+alias gh="git push"
+alias gl="git pull"
+alias gr="git revert"
+
+# Ruby 
+alias x="bundle exec"
+alias b="brew"
+alias g="gem"
+
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`

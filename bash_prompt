@@ -128,5 +128,5 @@ function parse_git_branch() {
 	git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
 }
 
-export PS1="\[${bold}${violet}\]\u\[$white\]@\[$cyan\]\h\[$white\]→\[$red\]\w\[$white\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$orange\]\$(parse_git_branch)\[$yellow\](\$(parse_rbenv))\[$white\]\n\$ \[$reset\]";
+export PS1="\[${bold}${violet}\]\u\[$white\]@\[$cyan\]\h\[$white\]→\[$red\]\w\[$white\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$orange\]\$(parse_git_branch)\[$black\](\$(parse_rbenv))\[$white\]\$ \[$reset\]";
 export PS2="\[$orange\]→ \[$reset\]";

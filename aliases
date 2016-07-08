@@ -17,9 +17,9 @@ alias p="cd ~/projects"
 alias h="history"
 alias j="jobs"
 
-alias code="~/code"
-alias dot="~/dotfiles"
-alias wf="~/code/workflows"
+alias code="cd ~/code"
+alias dot="cd ~/dotfiles"
+alias wf="cd ~/code/workflows"
 
 # Github
 alias gs="git status"
